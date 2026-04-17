@@ -1,0 +1,6155 @@
+{
+  "episode_id": "3bd3e8ae",
+  "seed": 1,
+  "agents": [
+    {
+      "player_id": 0,
+      "name": "heuristic",
+      "type": "HeuristicAgent"
+    },
+    {
+      "player_id": 1,
+      "name": "bluff",
+      "type": "BluffAgent"
+    }
+  ],
+  "turns": [
+    {
+      "turn": 0,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "A\u2666",
+          "A\u2660"
+        ],
+        "claimed_rank": "A"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "10\u2665",
+          "A\u2666",
+          "5\u2663",
+          "9\u2663",
+          "8\u2665",
+          "J\u2663",
+          "6\u2663",
+          "Q\u2663",
+          "J\u2660",
+          "4\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "A\u2660",
+          "J\u2666",
+          "Q\u2665",
+          "4\u2665",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 26,
+        "opponent_hand_size": 26,
+        "pile_size": 0,
+        "current_rank": "A",
+        "current_player": 0,
+        "turn": 0,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 0,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "A\u2666",
+            "A\u2660"
+          ],
+          "claimed_rank": "A"
+        },
+        "claimed_rank": "A",
+        "n_cards": 2,
+        "actual_cards": [
+          "A\u2666",
+          "A\u2660"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        24,
+        26
+      ]
+    },
+    {
+      "turn": 1,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "3\u2665",
+          "6\u2666"
+        ],
+        "claimed_rank": "2"
+      },
+      "observation_before": {
+        "my_hand": [
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "3\u2663",
+          "2\u2665",
+          "K\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "6\u2665",
+          "10\u2663",
+          "K\u2666",
+          "6\u2660",
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660"
+        ],
+        "my_hand_size": 26,
+        "opponent_hand_size": 24,
+        "pile_size": 2,
+        "current_rank": "2",
+        "current_player": 1,
+        "turn": 1,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "A",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 1,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "3\u2665",
+            "6\u2666"
+          ],
+          "claimed_rank": "2"
+        },
+        "claimed_rank": "2",
+        "n_cards": 2,
+        "actual_cards": [
+          "3\u2665",
+          "6\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        24,
+        24
+      ]
+    },
+    {
+      "turn": 2,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "10\u2665",
+          "5\u2663",
+          "9\u2663",
+          "8\u2665",
+          "J\u2663",
+          "6\u2663",
+          "Q\u2663",
+          "J\u2660",
+          "4\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "Q\u2665",
+          "4\u2665",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 24,
+        "opponent_hand_size": 24,
+        "pile_size": 4,
+        "current_rank": "3",
+        "current_player": 0,
+        "turn": 2,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "2",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 2,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "3\u2665",
+          "6\u2666"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        24,
+        28
+      ]
+    },
+    {
+      "turn": 3,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "10\u2666",
+          "2\u2665",
+          "K\u2663"
+        ],
+        "claimed_rank": "3"
+      },
+      "observation_before": {
+        "my_hand": [
+          "10\u2666",
+          "3\u2663",
+          "2\u2665",
+          "K\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "6\u2665",
+          "10\u2663",
+          "K\u2666",
+          "6\u2660",
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666"
+        ],
+        "my_hand_size": 28,
+        "opponent_hand_size": 24,
+        "pile_size": 0,
+        "current_rank": "3",
+        "current_player": 1,
+        "turn": 3,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 3,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "10\u2666",
+            "2\u2665",
+            "K\u2663"
+          ],
+          "claimed_rank": "3"
+        },
+        "claimed_rank": "3",
+        "n_cards": 3,
+        "actual_cards": [
+          "10\u2666",
+          "2\u2665",
+          "K\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        24,
+        25
+      ]
+    },
+    {
+      "turn": 4,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "4\u2660",
+          "4\u2665"
+        ],
+        "claimed_rank": "4"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "10\u2665",
+          "5\u2663",
+          "9\u2663",
+          "8\u2665",
+          "J\u2663",
+          "6\u2663",
+          "Q\u2663",
+          "J\u2660",
+          "4\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "Q\u2665",
+          "4\u2665",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 24,
+        "opponent_hand_size": 25,
+        "pile_size": 3,
+        "current_rank": "4",
+        "current_player": 0,
+        "turn": 4,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "3",
+          "n_cards": 3
+        }
+      },
+      "event": {
+        "turn": 4,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "4\u2660",
+            "4\u2665"
+          ],
+          "claimed_rank": "4"
+        },
+        "claimed_rank": "4",
+        "n_cards": 2,
+        "actual_cards": [
+          "4\u2660",
+          "4\u2665"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        22,
+        25
+      ]
+    },
+    {
+      "turn": 5,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "3\u2663"
+        ],
+        "claimed_rank": "5"
+      },
+      "observation_before": {
+        "my_hand": [
+          "3\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "6\u2665",
+          "10\u2663",
+          "K\u2666",
+          "6\u2660",
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666"
+        ],
+        "my_hand_size": 25,
+        "opponent_hand_size": 22,
+        "pile_size": 5,
+        "current_rank": "5",
+        "current_player": 1,
+        "turn": 5,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "4",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 5,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "3\u2663"
+          ],
+          "claimed_rank": "5"
+        },
+        "claimed_rank": "5",
+        "n_cards": 1,
+        "actual_cards": [
+          "3\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        22,
+        24
+      ]
+    },
+    {
+      "turn": 6,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "6\u2663"
+        ],
+        "claimed_rank": "6"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "10\u2665",
+          "5\u2663",
+          "9\u2663",
+          "8\u2665",
+          "J\u2663",
+          "6\u2663",
+          "Q\u2663",
+          "J\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "Q\u2665",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 22,
+        "opponent_hand_size": 24,
+        "pile_size": 6,
+        "current_rank": "6",
+        "current_player": 0,
+        "turn": 6,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "5",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 6,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "6\u2663"
+          ],
+          "claimed_rank": "6"
+        },
+        "claimed_rank": "6",
+        "n_cards": 1,
+        "actual_cards": [
+          "6\u2663"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        21,
+        24
+      ]
+    },
+    {
+      "turn": 7,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "4\u2663",
+          "Q\u2666"
+        ],
+        "claimed_rank": "7"
+      },
+      "observation_before": {
+        "my_hand": [
+          "4\u2663",
+          "Q\u2666",
+          "6\u2665",
+          "10\u2663",
+          "K\u2666",
+          "6\u2660",
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666"
+        ],
+        "my_hand_size": 24,
+        "opponent_hand_size": 21,
+        "pile_size": 7,
+        "current_rank": "7",
+        "current_player": 1,
+        "turn": 7,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "6",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 7,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "4\u2663",
+            "Q\u2666"
+          ],
+          "claimed_rank": "7"
+        },
+        "claimed_rank": "7",
+        "n_cards": 2,
+        "actual_cards": [
+          "4\u2663",
+          "Q\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        21,
+        22
+      ]
+    },
+    {
+      "turn": 8,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "8\u2665"
+        ],
+        "claimed_rank": "8"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "10\u2665",
+          "5\u2663",
+          "9\u2663",
+          "8\u2665",
+          "J\u2663",
+          "Q\u2663",
+          "J\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "Q\u2665",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 21,
+        "opponent_hand_size": 22,
+        "pile_size": 9,
+        "current_rank": "8",
+        "current_player": 0,
+        "turn": 8,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "7",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 8,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "8\u2665"
+          ],
+          "claimed_rank": "8"
+        },
+        "claimed_rank": "8",
+        "n_cards": 1,
+        "actual_cards": [
+          "8\u2665"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        20,
+        22
+      ]
+    },
+    {
+      "turn": 9,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "6\u2665",
+          "10\u2663"
+        ],
+        "claimed_rank": "9"
+      },
+      "observation_before": {
+        "my_hand": [
+          "6\u2665",
+          "10\u2663",
+          "K\u2666",
+          "6\u2660",
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666"
+        ],
+        "my_hand_size": 22,
+        "opponent_hand_size": 20,
+        "pile_size": 10,
+        "current_rank": "9",
+        "current_player": 1,
+        "turn": 9,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "8",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 9,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "6\u2665",
+            "10\u2663"
+          ],
+          "claimed_rank": "9"
+        },
+        "claimed_rank": "9",
+        "n_cards": 2,
+        "actual_cards": [
+          "6\u2665",
+          "10\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        20,
+        20
+      ]
+    },
+    {
+      "turn": 10,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "10\u2665"
+        ],
+        "claimed_rank": "10"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "10\u2665",
+          "5\u2663",
+          "9\u2663",
+          "J\u2663",
+          "Q\u2663",
+          "J\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "Q\u2665",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 20,
+        "opponent_hand_size": 20,
+        "pile_size": 12,
+        "current_rank": "10",
+        "current_player": 0,
+        "turn": 10,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "9",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 10,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "10\u2665"
+          ],
+          "claimed_rank": "10"
+        },
+        "claimed_rank": "10",
+        "n_cards": 1,
+        "actual_cards": [
+          "10\u2665"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        19,
+        20
+      ]
+    },
+    {
+      "turn": 11,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2666",
+          "6\u2660",
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666"
+        ],
+        "my_hand_size": 20,
+        "opponent_hand_size": 19,
+        "pile_size": 13,
+        "current_rank": "J",
+        "current_player": 1,
+        "turn": 11,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "10",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 11,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "honest",
+        "actual_cards": [
+          "10\u2665"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        19,
+        33
+      ]
+    },
+    {
+      "turn": 12,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "K\u2666",
+          "6\u2660"
+        ],
+        "claimed_rank": "J"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2666",
+          "6\u2660",
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665"
+        ],
+        "my_hand_size": 33,
+        "opponent_hand_size": 19,
+        "pile_size": 0,
+        "current_rank": "J",
+        "current_player": 1,
+        "turn": 12,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 12,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "K\u2666",
+            "6\u2660"
+          ],
+          "claimed_rank": "J"
+        },
+        "claimed_rank": "J",
+        "n_cards": 2,
+        "actual_cards": [
+          "K\u2666",
+          "6\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        19,
+        31
+      ]
+    },
+    {
+      "turn": 13,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "Q\u2663",
+          "Q\u2665"
+        ],
+        "claimed_rank": "Q"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2663",
+          "9\u2663",
+          "J\u2663",
+          "Q\u2663",
+          "J\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "Q\u2665",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 19,
+        "opponent_hand_size": 31,
+        "pile_size": 2,
+        "current_rank": "Q",
+        "current_player": 0,
+        "turn": 13,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "J",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 13,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "Q\u2663",
+            "Q\u2665"
+          ],
+          "claimed_rank": "Q"
+        },
+        "claimed_rank": "Q",
+        "n_cards": 2,
+        "actual_cards": [
+          "Q\u2663",
+          "Q\u2665"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        17,
+        31
+      ]
+    },
+    {
+      "turn": 14,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665"
+        ],
+        "my_hand_size": 31,
+        "opponent_hand_size": 17,
+        "pile_size": 4,
+        "current_rank": "K",
+        "current_player": 1,
+        "turn": 14,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "Q",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 14,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "honest",
+        "actual_cards": [
+          "Q\u2663",
+          "Q\u2665"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        17,
+        35
+      ]
+    },
+    {
+      "turn": 15,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "7\u2666",
+          "3\u2666"
+        ],
+        "claimed_rank": "K"
+      },
+      "observation_before": {
+        "my_hand": [
+          "7\u2666",
+          "3\u2666",
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665"
+        ],
+        "my_hand_size": 35,
+        "opponent_hand_size": 17,
+        "pile_size": 0,
+        "current_rank": "K",
+        "current_player": 1,
+        "turn": 15,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 15,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "7\u2666",
+            "3\u2666"
+          ],
+          "claimed_rank": "K"
+        },
+        "claimed_rank": "K",
+        "n_cards": 2,
+        "actual_cards": [
+          "7\u2666",
+          "3\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        17,
+        33
+      ]
+    },
+    {
+      "turn": 16,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "J\u2660"
+        ],
+        "claimed_rank": "A"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2663",
+          "9\u2663",
+          "J\u2663",
+          "J\u2660",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 17,
+        "opponent_hand_size": 33,
+        "pile_size": 2,
+        "current_rank": "A",
+        "current_player": 0,
+        "turn": 16,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "K",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 16,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "J\u2660"
+          ],
+          "claimed_rank": "A"
+        },
+        "claimed_rank": "A",
+        "n_cards": 1,
+        "actual_cards": [
+          "J\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        16,
+        33
+      ]
+    },
+    {
+      "turn": 17,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "A\u2663",
+          "4\u2666"
+        ],
+        "claimed_rank": "2"
+      },
+      "observation_before": {
+        "my_hand": [
+          "A\u2663",
+          "4\u2666",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665"
+        ],
+        "my_hand_size": 33,
+        "opponent_hand_size": 16,
+        "pile_size": 3,
+        "current_rank": "2",
+        "current_player": 1,
+        "turn": 17,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "A",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 17,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "A\u2663",
+            "4\u2666"
+          ],
+          "claimed_rank": "2"
+        },
+        "claimed_rank": "2",
+        "n_cards": 2,
+        "actual_cards": [
+          "A\u2663",
+          "4\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        16,
+        31
+      ]
+    },
+    {
+      "turn": 18,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "J\u2663"
+        ],
+        "claimed_rank": "3"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2663",
+          "9\u2663",
+          "J\u2663",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 16,
+        "opponent_hand_size": 31,
+        "pile_size": 5,
+        "current_rank": "3",
+        "current_player": 0,
+        "turn": 18,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "2",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 18,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "J\u2663"
+          ],
+          "claimed_rank": "3"
+        },
+        "claimed_rank": "3",
+        "n_cards": 1,
+        "actual_cards": [
+          "J\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        15,
+        31
+      ]
+    },
+    {
+      "turn": 19,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665"
+        ],
+        "claimed_rank": "4"
+      },
+      "observation_before": {
+        "my_hand": [
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665"
+        ],
+        "my_hand_size": 31,
+        "opponent_hand_size": 15,
+        "pile_size": 6,
+        "current_rank": "4",
+        "current_player": 1,
+        "turn": 19,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "3",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 19,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "Q\u2660",
+            "7\u2663",
+            "A\u2665"
+          ],
+          "claimed_rank": "4"
+        },
+        "claimed_rank": "4",
+        "n_cards": 3,
+        "actual_cards": [
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        15,
+        28
+      ]
+    },
+    {
+      "turn": 20,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "5\u2663"
+        ],
+        "claimed_rank": "5"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2663",
+          "9\u2663",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 15,
+        "opponent_hand_size": 28,
+        "pile_size": 9,
+        "current_rank": "5",
+        "current_player": 0,
+        "turn": 20,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "4",
+          "n_cards": 3
+        }
+      },
+      "event": {
+        "turn": 20,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "5\u2663"
+          ],
+          "claimed_rank": "5"
+        },
+        "claimed_rank": "5",
+        "n_cards": 1,
+        "actual_cards": [
+          "5\u2663"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        14,
+        28
+      ]
+    },
+    {
+      "turn": 21,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "2\u2666"
+        ],
+        "claimed_rank": "6"
+      },
+      "observation_before": {
+        "my_hand": [
+          "2\u2666",
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665"
+        ],
+        "my_hand_size": 28,
+        "opponent_hand_size": 14,
+        "pile_size": 10,
+        "current_rank": "6",
+        "current_player": 1,
+        "turn": 21,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "5",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 21,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "2\u2666"
+          ],
+          "claimed_rank": "6"
+        },
+        "claimed_rank": "6",
+        "n_cards": 1,
+        "actual_cards": [
+          "2\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        14,
+        27
+      ]
+    },
+    {
+      "turn": 22,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2663",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 14,
+        "opponent_hand_size": 27,
+        "pile_size": 11,
+        "current_rank": "7",
+        "current_player": 0,
+        "turn": 22,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "6",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 22,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "2\u2666"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        14,
+        38
+      ]
+    },
+    {
+      "turn": 23,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "8\u2666"
+        ],
+        "claimed_rank": "7"
+      },
+      "observation_before": {
+        "my_hand": [
+          "7\u2660",
+          "8\u2666",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666"
+        ],
+        "my_hand_size": 38,
+        "opponent_hand_size": 14,
+        "pile_size": 0,
+        "current_rank": "7",
+        "current_player": 1,
+        "turn": 23,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 23,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "8\u2666"
+          ],
+          "claimed_rank": "7"
+        },
+        "claimed_rank": "7",
+        "n_cards": 1,
+        "actual_cards": [
+          "8\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        14,
+        37
+      ]
+    },
+    {
+      "turn": 24,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "8\u2660"
+        ],
+        "claimed_rank": "8"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2663",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "8\u2660",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 14,
+        "opponent_hand_size": 37,
+        "pile_size": 1,
+        "current_rank": "8",
+        "current_player": 0,
+        "turn": 24,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "7",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 24,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "8\u2660"
+          ],
+          "claimed_rank": "8"
+        },
+        "claimed_rank": "8",
+        "n_cards": 1,
+        "actual_cards": [
+          "8\u2660"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        13,
+        37
+      ]
+    },
+    {
+      "turn": 25,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "7\u2660",
+          "8\u2663"
+        ],
+        "claimed_rank": "9"
+      },
+      "observation_before": {
+        "my_hand": [
+          "7\u2660",
+          "8\u2663",
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666"
+        ],
+        "my_hand_size": 37,
+        "opponent_hand_size": 13,
+        "pile_size": 2,
+        "current_rank": "9",
+        "current_player": 1,
+        "turn": 25,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "8",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 25,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "7\u2660",
+            "8\u2663"
+          ],
+          "claimed_rank": "9"
+        },
+        "claimed_rank": "9",
+        "n_cards": 2,
+        "actual_cards": [
+          "7\u2660",
+          "8\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        13,
+        35
+      ]
+    },
+    {
+      "turn": 26,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "10\u2660"
+        ],
+        "claimed_rank": "10"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2663",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "2\u2663",
+          "2\u2660",
+          "10\u2660"
+        ],
+        "my_hand_size": 13,
+        "opponent_hand_size": 35,
+        "pile_size": 4,
+        "current_rank": "10",
+        "current_player": 0,
+        "turn": 26,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "9",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 26,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "10\u2660"
+          ],
+          "claimed_rank": "10"
+        },
+        "claimed_rank": "10",
+        "n_cards": 1,
+        "actual_cards": [
+          "10\u2660"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        12,
+        35
+      ]
+    },
+    {
+      "turn": 27,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "5\u2660",
+          "K\u2660"
+        ],
+        "claimed_rank": "J"
+      },
+      "observation_before": {
+        "my_hand": [
+          "5\u2660",
+          "K\u2660",
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666"
+        ],
+        "my_hand_size": 35,
+        "opponent_hand_size": 12,
+        "pile_size": 5,
+        "current_rank": "J",
+        "current_player": 1,
+        "turn": 27,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "10",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 27,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "5\u2660",
+            "K\u2660"
+          ],
+          "claimed_rank": "J"
+        },
+        "claimed_rank": "J",
+        "n_cards": 2,
+        "actual_cards": [
+          "5\u2660",
+          "K\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        12,
+        33
+      ]
+    },
+    {
+      "turn": 28,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "9\u2663"
+        ],
+        "claimed_rank": "Q"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2663",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 12,
+        "opponent_hand_size": 33,
+        "pile_size": 7,
+        "current_rank": "Q",
+        "current_player": 0,
+        "turn": 28,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "J",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 28,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "9\u2663"
+          ],
+          "claimed_rank": "Q"
+        },
+        "claimed_rank": "Q",
+        "n_cards": 1,
+        "actual_cards": [
+          "9\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        11,
+        33
+      ]
+    },
+    {
+      "turn": 29,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "3\u2660",
+          "A\u2666"
+        ],
+        "claimed_rank": "K"
+      },
+      "observation_before": {
+        "my_hand": [
+          "3\u2660",
+          "A\u2666",
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666"
+        ],
+        "my_hand_size": 33,
+        "opponent_hand_size": 11,
+        "pile_size": 8,
+        "current_rank": "K",
+        "current_player": 1,
+        "turn": 29,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "Q",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 29,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "3\u2660",
+            "A\u2666"
+          ],
+          "claimed_rank": "K"
+        },
+        "claimed_rank": "K",
+        "n_cards": 2,
+        "actual_cards": [
+          "3\u2660",
+          "A\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        11,
+        31
+      ]
+    },
+    {
+      "turn": 30,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 11,
+        "opponent_hand_size": 31,
+        "pile_size": 10,
+        "current_rank": "A",
+        "current_player": 0,
+        "turn": 30,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "K",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 30,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "3\u2660",
+          "A\u2666"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        11,
+        41
+      ]
+    },
+    {
+      "turn": 31,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "3\u2665",
+          "6\u2666"
+        ],
+        "claimed_rank": "A"
+      },
+      "observation_before": {
+        "my_hand": [
+          "A\u2660",
+          "3\u2665",
+          "6\u2666",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666"
+        ],
+        "my_hand_size": 41,
+        "opponent_hand_size": 11,
+        "pile_size": 0,
+        "current_rank": "A",
+        "current_player": 1,
+        "turn": 31,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 31,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "3\u2665",
+            "6\u2666"
+          ],
+          "claimed_rank": "A"
+        },
+        "claimed_rank": "A",
+        "n_cards": 2,
+        "actual_cards": [
+          "3\u2665",
+          "6\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        11,
+        39
+      ]
+    },
+    {
+      "turn": 32,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "2\u2663",
+          "2\u2660"
+        ],
+        "claimed_rank": "2"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 11,
+        "opponent_hand_size": 39,
+        "pile_size": 2,
+        "current_rank": "2",
+        "current_player": 0,
+        "turn": 32,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "A",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 32,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "2\u2663",
+            "2\u2660"
+          ],
+          "claimed_rank": "2"
+        },
+        "claimed_rank": "2",
+        "n_cards": 2,
+        "actual_cards": [
+          "2\u2663",
+          "2\u2660"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        9,
+        39
+      ]
+    },
+    {
+      "turn": 33,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "A\u2660",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666"
+        ],
+        "my_hand_size": 39,
+        "opponent_hand_size": 9,
+        "pile_size": 4,
+        "current_rank": "3",
+        "current_player": 1,
+        "turn": 33,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "2",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 33,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "honest",
+        "actual_cards": [
+          "2\u2663",
+          "2\u2660"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        9,
+        43
+      ]
+    },
+    {
+      "turn": 34,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "A\u2660",
+          "10\u2666"
+        ],
+        "claimed_rank": "3"
+      },
+      "observation_before": {
+        "my_hand": [
+          "A\u2660",
+          "10\u2666",
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 43,
+        "opponent_hand_size": 9,
+        "pile_size": 0,
+        "current_rank": "3",
+        "current_player": 1,
+        "turn": 34,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 34,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "A\u2660",
+            "10\u2666"
+          ],
+          "claimed_rank": "3"
+        },
+        "claimed_rank": "3",
+        "n_cards": 2,
+        "actual_cards": [
+          "A\u2660",
+          "10\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        9,
+        41
+      ]
+    },
+    {
+      "turn": 35,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "7\u2665"
+        ],
+        "claimed_rank": "4"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2660",
+          "7\u2665",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665"
+        ],
+        "my_hand_size": 9,
+        "opponent_hand_size": 41,
+        "pile_size": 2,
+        "current_rank": "4",
+        "current_player": 0,
+        "turn": 35,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "3",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 35,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "7\u2665"
+          ],
+          "claimed_rank": "4"
+        },
+        "claimed_rank": "4",
+        "n_cards": 1,
+        "actual_cards": [
+          "7\u2665"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        8,
+        41
+      ]
+    },
+    {
+      "turn": 36,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "2\u2665",
+          "K\u2663"
+        ],
+        "claimed_rank": "5"
+      },
+      "observation_before": {
+        "my_hand": [
+          "2\u2665",
+          "K\u2663",
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 41,
+        "opponent_hand_size": 8,
+        "pile_size": 3,
+        "current_rank": "5",
+        "current_player": 1,
+        "turn": 36,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "4",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 36,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "2\u2665",
+            "K\u2663"
+          ],
+          "claimed_rank": "5"
+        },
+        "claimed_rank": "5",
+        "n_cards": 2,
+        "actual_cards": [
+          "2\u2665",
+          "K\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        8,
+        39
+      ]
+    },
+    {
+      "turn": 37,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "5\u2665"
+        ],
+        "claimed_rank": "6"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2660",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "5\u2665",
+          "J\u2666",
+          "J\u2665"
+        ],
+        "my_hand_size": 8,
+        "opponent_hand_size": 39,
+        "pile_size": 5,
+        "current_rank": "6",
+        "current_player": 0,
+        "turn": 37,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "5",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 37,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "5\u2665"
+          ],
+          "claimed_rank": "6"
+        },
+        "claimed_rank": "6",
+        "n_cards": 1,
+        "actual_cards": [
+          "5\u2665"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        7,
+        39
+      ]
+    },
+    {
+      "turn": 38,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "4\u2660"
+        ],
+        "claimed_rank": "7"
+      },
+      "observation_before": {
+        "my_hand": [
+          "4\u2660",
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 39,
+        "opponent_hand_size": 7,
+        "pile_size": 6,
+        "current_rank": "7",
+        "current_player": 1,
+        "turn": 38,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "6",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 38,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "4\u2660"
+          ],
+          "claimed_rank": "7"
+        },
+        "claimed_rank": "7",
+        "n_cards": 1,
+        "actual_cards": [
+          "4\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        7,
+        38
+      ]
+    },
+    {
+      "turn": 39,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "J\u2665"
+        ],
+        "claimed_rank": "8"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2660",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "J\u2666",
+          "J\u2665"
+        ],
+        "my_hand_size": 7,
+        "opponent_hand_size": 38,
+        "pile_size": 7,
+        "current_rank": "8",
+        "current_player": 0,
+        "turn": 39,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "7",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 39,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "J\u2665"
+          ],
+          "claimed_rank": "8"
+        },
+        "claimed_rank": "8",
+        "n_cards": 1,
+        "actual_cards": [
+          "J\u2665"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        6,
+        38
+      ]
+    },
+    {
+      "turn": 40,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 38,
+        "opponent_hand_size": 6,
+        "pile_size": 8,
+        "current_rank": "9",
+        "current_player": 1,
+        "turn": 40,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "8",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 40,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "J\u2665"
+        ],
+        "pile_goes_to": 0
+      },
+      "hand_sizes_after": [
+        14,
+        38
+      ]
+    },
+    {
+      "turn": 41,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "9\u2660",
+          "9\u2666"
+        ],
+        "claimed_rank": "9"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2660",
+          "9\u2666",
+          "9\u2665",
+          "5\u2666",
+          "J\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "2\u2665",
+          "K\u2663",
+          "5\u2665",
+          "4\u2660",
+          "J\u2665"
+        ],
+        "my_hand_size": 14,
+        "opponent_hand_size": 38,
+        "pile_size": 0,
+        "current_rank": "9",
+        "current_player": 0,
+        "turn": 41,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 41,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "9\u2660",
+            "9\u2666"
+          ],
+          "claimed_rank": "9"
+        },
+        "claimed_rank": "9",
+        "n_cards": 2,
+        "actual_cards": [
+          "9\u2660",
+          "9\u2666"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        12,
+        38
+      ]
+    },
+    {
+      "turn": 42,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660"
+        ],
+        "my_hand_size": 38,
+        "opponent_hand_size": 12,
+        "pile_size": 2,
+        "current_rank": "10",
+        "current_player": 1,
+        "turn": 42,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "9",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 42,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "honest",
+        "actual_cards": [
+          "9\u2660",
+          "9\u2666"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        12,
+        40
+      ]
+    },
+    {
+      "turn": 43,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "4\u2665",
+          "3\u2663"
+        ],
+        "claimed_rank": "10"
+      },
+      "observation_before": {
+        "my_hand": [
+          "4\u2665",
+          "3\u2663",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666"
+        ],
+        "my_hand_size": 40,
+        "opponent_hand_size": 12,
+        "pile_size": 0,
+        "current_rank": "10",
+        "current_player": 1,
+        "turn": 43,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 43,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "4\u2665",
+            "3\u2663"
+          ],
+          "claimed_rank": "10"
+        },
+        "claimed_rank": "10",
+        "n_cards": 2,
+        "actual_cards": [
+          "4\u2665",
+          "3\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        12,
+        38
+      ]
+    },
+    {
+      "turn": 44,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "J\u2666",
+          "J\u2665"
+        ],
+        "claimed_rank": "J"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "J\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "2\u2665",
+          "K\u2663",
+          "5\u2665",
+          "4\u2660",
+          "J\u2665"
+        ],
+        "my_hand_size": 12,
+        "opponent_hand_size": 38,
+        "pile_size": 2,
+        "current_rank": "J",
+        "current_player": 0,
+        "turn": 44,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "10",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 44,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "J\u2666",
+            "J\u2665"
+          ],
+          "claimed_rank": "J"
+        },
+        "claimed_rank": "J",
+        "n_cards": 2,
+        "actual_cards": [
+          "J\u2666",
+          "J\u2665"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        10,
+        38
+      ]
+    },
+    {
+      "turn": 45,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "6\u2663",
+          "4\u2663"
+        ],
+        "claimed_rank": "Q"
+      },
+      "observation_before": {
+        "my_hand": [
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666"
+        ],
+        "my_hand_size": 38,
+        "opponent_hand_size": 10,
+        "pile_size": 4,
+        "current_rank": "Q",
+        "current_player": 1,
+        "turn": 45,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "J",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 45,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "6\u2663",
+            "4\u2663"
+          ],
+          "claimed_rank": "Q"
+        },
+        "claimed_rank": "Q",
+        "n_cards": 2,
+        "actual_cards": [
+          "6\u2663",
+          "4\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        10,
+        36
+      ]
+    },
+    {
+      "turn": 46,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "2\u2665",
+          "K\u2663",
+          "5\u2665",
+          "4\u2660"
+        ],
+        "my_hand_size": 10,
+        "opponent_hand_size": 36,
+        "pile_size": 6,
+        "current_rank": "K",
+        "current_player": 0,
+        "turn": 46,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "Q",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 46,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "6\u2663",
+          "4\u2663"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        10,
+        42
+      ]
+    },
+    {
+      "turn": 47,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665"
+        ],
+        "claimed_rank": "K"
+      },
+      "observation_before": {
+        "my_hand": [
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663"
+        ],
+        "my_hand_size": 42,
+        "opponent_hand_size": 10,
+        "pile_size": 0,
+        "current_rank": "K",
+        "current_player": 1,
+        "turn": 47,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 47,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "Q\u2666",
+            "8\u2665",
+            "6\u2665"
+          ],
+          "claimed_rank": "K"
+        },
+        "claimed_rank": "K",
+        "n_cards": 3,
+        "actual_cards": [
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        10,
+        39
+      ]
+    },
+    {
+      "turn": 48,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "2\u2665",
+          "K\u2663",
+          "5\u2665",
+          "4\u2660"
+        ],
+        "my_hand_size": 10,
+        "opponent_hand_size": 39,
+        "pile_size": 3,
+        "current_rank": "A",
+        "current_player": 0,
+        "turn": 48,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "K",
+          "n_cards": 3
+        }
+      },
+      "event": {
+        "turn": 48,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        10,
+        42
+      ]
+    },
+    {
+      "turn": 49,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "10\u2663",
+          "10\u2665",
+          "K\u2666"
+        ],
+        "claimed_rank": "A"
+      },
+      "observation_before": {
+        "my_hand": [
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665"
+        ],
+        "my_hand_size": 42,
+        "opponent_hand_size": 10,
+        "pile_size": 0,
+        "current_rank": "A",
+        "current_player": 1,
+        "turn": 49,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 49,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "10\u2663",
+            "10\u2665",
+            "K\u2666"
+          ],
+          "claimed_rank": "A"
+        },
+        "claimed_rank": "A",
+        "n_cards": 3,
+        "actual_cards": [
+          "10\u2663",
+          "10\u2665",
+          "K\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        10,
+        39
+      ]
+    },
+    {
+      "turn": 50,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "2\u2665"
+        ],
+        "claimed_rank": "2"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "2\u2665",
+          "K\u2663",
+          "5\u2665",
+          "4\u2660"
+        ],
+        "my_hand_size": 10,
+        "opponent_hand_size": 39,
+        "pile_size": 3,
+        "current_rank": "2",
+        "current_player": 0,
+        "turn": 50,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "A",
+          "n_cards": 3
+        }
+      },
+      "event": {
+        "turn": 50,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "2\u2665"
+          ],
+          "claimed_rank": "2"
+        },
+        "claimed_rank": "2",
+        "n_cards": 1,
+        "actual_cards": [
+          "2\u2665"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        9,
+        39
+      ]
+    },
+    {
+      "turn": 51,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "6\u2660",
+          "Q\u2663"
+        ],
+        "claimed_rank": "3"
+      },
+      "observation_before": {
+        "my_hand": [
+          "6\u2660",
+          "Q\u2663",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665"
+        ],
+        "my_hand_size": 39,
+        "opponent_hand_size": 9,
+        "pile_size": 4,
+        "current_rank": "3",
+        "current_player": 1,
+        "turn": 51,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "2",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 51,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "6\u2660",
+            "Q\u2663"
+          ],
+          "claimed_rank": "3"
+        },
+        "claimed_rank": "3",
+        "n_cards": 2,
+        "actual_cards": [
+          "6\u2660",
+          "Q\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        9,
+        37
+      ]
+    },
+    {
+      "turn": 52,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "4\u2660"
+        ],
+        "claimed_rank": "4"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "K\u2663",
+          "5\u2665",
+          "4\u2660"
+        ],
+        "my_hand_size": 9,
+        "opponent_hand_size": 37,
+        "pile_size": 6,
+        "current_rank": "4",
+        "current_player": 0,
+        "turn": 52,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "3",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 52,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "4\u2660"
+          ],
+          "claimed_rank": "4"
+        },
+        "claimed_rank": "4",
+        "n_cards": 1,
+        "actual_cards": [
+          "4\u2660"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        8,
+        37
+      ]
+    },
+    {
+      "turn": 53,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "Q\u2665",
+          "7\u2666"
+        ],
+        "claimed_rank": "5"
+      },
+      "observation_before": {
+        "my_hand": [
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665"
+        ],
+        "my_hand_size": 37,
+        "opponent_hand_size": 8,
+        "pile_size": 7,
+        "current_rank": "5",
+        "current_player": 1,
+        "turn": 53,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "4",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 53,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "Q\u2665",
+            "7\u2666"
+          ],
+          "claimed_rank": "5"
+        },
+        "claimed_rank": "5",
+        "n_cards": 2,
+        "actual_cards": [
+          "Q\u2665",
+          "7\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        8,
+        35
+      ]
+    },
+    {
+      "turn": 54,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "K\u2663",
+          "5\u2665"
+        ],
+        "my_hand_size": 8,
+        "opponent_hand_size": 35,
+        "pile_size": 9,
+        "current_rank": "6",
+        "current_player": 0,
+        "turn": 54,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "5",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 54,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "Q\u2665",
+          "7\u2666"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        8,
+        44
+      ]
+    },
+    {
+      "turn": 55,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "3\u2666",
+          "J\u2660"
+        ],
+        "claimed_rank": "6"
+      },
+      "observation_before": {
+        "my_hand": [
+          "3\u2666",
+          "J\u2660",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666"
+        ],
+        "my_hand_size": 44,
+        "opponent_hand_size": 8,
+        "pile_size": 0,
+        "current_rank": "6",
+        "current_player": 1,
+        "turn": 55,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 55,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "3\u2666",
+            "J\u2660"
+          ],
+          "claimed_rank": "6"
+        },
+        "claimed_rank": "6",
+        "n_cards": 2,
+        "actual_cards": [
+          "3\u2666",
+          "J\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        8,
+        42
+      ]
+    },
+    {
+      "turn": 56,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "K\u2663",
+          "5\u2665"
+        ],
+        "my_hand_size": 8,
+        "opponent_hand_size": 42,
+        "pile_size": 2,
+        "current_rank": "7",
+        "current_player": 0,
+        "turn": 56,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "6",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 56,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "3\u2666",
+          "J\u2660"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        8,
+        44
+      ]
+    },
+    {
+      "turn": 57,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "A\u2663",
+          "4\u2666",
+          "J\u2663"
+        ],
+        "claimed_rank": "7"
+      },
+      "observation_before": {
+        "my_hand": [
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660"
+        ],
+        "my_hand_size": 44,
+        "opponent_hand_size": 8,
+        "pile_size": 0,
+        "current_rank": "7",
+        "current_player": 1,
+        "turn": 57,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 57,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "A\u2663",
+            "4\u2666",
+            "J\u2663"
+          ],
+          "claimed_rank": "7"
+        },
+        "claimed_rank": "7",
+        "n_cards": 3,
+        "actual_cards": [
+          "A\u2663",
+          "4\u2666",
+          "J\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        8,
+        41
+      ]
+    },
+    {
+      "turn": 58,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "K\u2663"
+        ],
+        "claimed_rank": "8"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "K\u2663",
+          "5\u2665"
+        ],
+        "my_hand_size": 8,
+        "opponent_hand_size": 41,
+        "pile_size": 3,
+        "current_rank": "8",
+        "current_player": 0,
+        "turn": 58,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "7",
+          "n_cards": 3
+        }
+      },
+      "event": {
+        "turn": 58,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "K\u2663"
+          ],
+          "claimed_rank": "8"
+        },
+        "claimed_rank": "8",
+        "n_cards": 1,
+        "actual_cards": [
+          "K\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        7,
+        41
+      ]
+    },
+    {
+      "turn": 59,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660"
+        ],
+        "my_hand_size": 41,
+        "opponent_hand_size": 7,
+        "pile_size": 4,
+        "current_rank": "9",
+        "current_player": 1,
+        "turn": 59,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "8",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 59,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "K\u2663"
+        ],
+        "pile_goes_to": 0
+      },
+      "hand_sizes_after": [
+        11,
+        41
+      ]
+    },
+    {
+      "turn": 60,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "9\u2665"
+        ],
+        "claimed_rank": "9"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "9\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "5\u2665",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "K\u2663"
+        ],
+        "my_hand_size": 11,
+        "opponent_hand_size": 41,
+        "pile_size": 0,
+        "current_rank": "9",
+        "current_player": 0,
+        "turn": 60,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 60,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "9\u2665"
+          ],
+          "claimed_rank": "9"
+        },
+        "claimed_rank": "9",
+        "n_cards": 1,
+        "actual_cards": [
+          "9\u2665"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        10,
+        41
+      ]
+    },
+    {
+      "turn": 61,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660"
+        ],
+        "my_hand_size": 41,
+        "opponent_hand_size": 10,
+        "pile_size": 1,
+        "current_rank": "10",
+        "current_player": 1,
+        "turn": 61,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "9",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 61,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "honest",
+        "actual_cards": [
+          "9\u2665"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        10,
+        42
+      ]
+    },
+    {
+      "turn": 62,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "Q\u2660",
+          "7\u2663"
+        ],
+        "claimed_rank": "10"
+      },
+      "observation_before": {
+        "my_hand": [
+          "Q\u2660",
+          "7\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665"
+        ],
+        "my_hand_size": 42,
+        "opponent_hand_size": 10,
+        "pile_size": 0,
+        "current_rank": "10",
+        "current_player": 1,
+        "turn": 62,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 62,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "Q\u2660",
+            "7\u2663"
+          ],
+          "claimed_rank": "10"
+        },
+        "claimed_rank": "10",
+        "n_cards": 2,
+        "actual_cards": [
+          "Q\u2660",
+          "7\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        10,
+        40
+      ]
+    },
+    {
+      "turn": 63,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "J\u2663"
+        ],
+        "claimed_rank": "J"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "5\u2665",
+          "A\u2663",
+          "4\u2666",
+          "J\u2663",
+          "K\u2663"
+        ],
+        "my_hand_size": 10,
+        "opponent_hand_size": 40,
+        "pile_size": 2,
+        "current_rank": "J",
+        "current_player": 0,
+        "turn": 63,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "10",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 63,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "J\u2663"
+          ],
+          "claimed_rank": "J"
+        },
+        "claimed_rank": "J",
+        "n_cards": 1,
+        "actual_cards": [
+          "J\u2663"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        9,
+        40
+      ]
+    },
+    {
+      "turn": 64,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665"
+        ],
+        "my_hand_size": 40,
+        "opponent_hand_size": 9,
+        "pile_size": 3,
+        "current_rank": "Q",
+        "current_player": 1,
+        "turn": 64,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "J",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 64,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "honest",
+        "actual_cards": [
+          "J\u2663"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        9,
+        43
+      ]
+    },
+    {
+      "turn": 65,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "A\u2665"
+        ],
+        "claimed_rank": "Q"
+      },
+      "observation_before": {
+        "my_hand": [
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663"
+        ],
+        "my_hand_size": 43,
+        "opponent_hand_size": 9,
+        "pile_size": 0,
+        "current_rank": "Q",
+        "current_player": 1,
+        "turn": 65,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 65,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "A\u2665"
+          ],
+          "claimed_rank": "Q"
+        },
+        "claimed_rank": "Q",
+        "n_cards": 1,
+        "actual_cards": [
+          "A\u2665"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        9,
+        42
+      ]
+    },
+    {
+      "turn": 66,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "5\u2665",
+          "A\u2663",
+          "4\u2666",
+          "K\u2663"
+        ],
+        "my_hand_size": 9,
+        "opponent_hand_size": 42,
+        "pile_size": 1,
+        "current_rank": "K",
+        "current_player": 0,
+        "turn": 66,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "Q",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 66,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "A\u2665"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        9,
+        43
+      ]
+    },
+    {
+      "turn": 67,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "5\u2663",
+          "2\u2666",
+          "8\u2666"
+        ],
+        "claimed_rank": "K"
+      },
+      "observation_before": {
+        "my_hand": [
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665"
+        ],
+        "my_hand_size": 43,
+        "opponent_hand_size": 9,
+        "pile_size": 0,
+        "current_rank": "K",
+        "current_player": 1,
+        "turn": 67,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 67,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "5\u2663",
+            "2\u2666",
+            "8\u2666"
+          ],
+          "claimed_rank": "K"
+        },
+        "claimed_rank": "K",
+        "n_cards": 3,
+        "actual_cards": [
+          "5\u2663",
+          "2\u2666",
+          "8\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        9,
+        40
+      ]
+    },
+    {
+      "turn": 68,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "A\u2660",
+          "A\u2663"
+        ],
+        "claimed_rank": "A"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "A\u2660",
+          "10\u2666",
+          "7\u2665",
+          "5\u2665",
+          "A\u2663",
+          "4\u2666",
+          "K\u2663"
+        ],
+        "my_hand_size": 9,
+        "opponent_hand_size": 40,
+        "pile_size": 3,
+        "current_rank": "A",
+        "current_player": 0,
+        "turn": 68,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "K",
+          "n_cards": 3
+        }
+      },
+      "event": {
+        "turn": 68,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "A\u2660",
+            "A\u2663"
+          ],
+          "claimed_rank": "A"
+        },
+        "claimed_rank": "A",
+        "n_cards": 2,
+        "actual_cards": [
+          "A\u2660",
+          "A\u2663"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        7,
+        40
+      ]
+    },
+    {
+      "turn": 69,
+      "player": 1,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665"
+        ],
+        "my_hand_size": 40,
+        "opponent_hand_size": 7,
+        "pile_size": 5,
+        "current_rank": "2",
+        "current_player": 1,
+        "turn": 69,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "A",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 69,
+        "player": 1,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "honest",
+        "actual_cards": [
+          "A\u2660",
+          "A\u2663"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        7,
+        45
+      ]
+    },
+    {
+      "turn": 70,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "8\u2660"
+        ],
+        "claimed_rank": "2"
+      },
+      "observation_before": {
+        "my_hand": [
+          "8\u2660",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663"
+        ],
+        "my_hand_size": 45,
+        "opponent_hand_size": 7,
+        "pile_size": 0,
+        "current_rank": "2",
+        "current_player": 1,
+        "turn": 70,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 70,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "8\u2660"
+          ],
+          "claimed_rank": "2"
+        },
+        "claimed_rank": "2",
+        "n_cards": 1,
+        "actual_cards": [
+          "8\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        7,
+        44
+      ]
+    },
+    {
+      "turn": 71,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "5\u2665"
+        ],
+        "claimed_rank": "3"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "10\u2666",
+          "7\u2665",
+          "5\u2665",
+          "4\u2666",
+          "K\u2663"
+        ],
+        "my_hand_size": 7,
+        "opponent_hand_size": 44,
+        "pile_size": 1,
+        "current_rank": "3",
+        "current_player": 0,
+        "turn": 71,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "2",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 71,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "5\u2665"
+          ],
+          "claimed_rank": "3"
+        },
+        "claimed_rank": "3",
+        "n_cards": 1,
+        "actual_cards": [
+          "5\u2665"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        6,
+        44
+      ]
+    },
+    {
+      "turn": 72,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "7\u2660"
+        ],
+        "claimed_rank": "4"
+      },
+      "observation_before": {
+        "my_hand": [
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663"
+        ],
+        "my_hand_size": 44,
+        "opponent_hand_size": 6,
+        "pile_size": 2,
+        "current_rank": "4",
+        "current_player": 1,
+        "turn": 72,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "3",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 72,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "7\u2660"
+          ],
+          "claimed_rank": "4"
+        },
+        "claimed_rank": "4",
+        "n_cards": 1,
+        "actual_cards": [
+          "7\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        6,
+        43
+      ]
+    },
+    {
+      "turn": 73,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "10\u2666",
+          "7\u2665",
+          "4\u2666",
+          "K\u2663"
+        ],
+        "my_hand_size": 6,
+        "opponent_hand_size": 43,
+        "pile_size": 3,
+        "current_rank": "5",
+        "current_player": 0,
+        "turn": 73,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "4",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 73,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "7\u2660"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        6,
+        46
+      ]
+    },
+    {
+      "turn": 74,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "8\u2663",
+          "10\u2660",
+          "K\u2660"
+        ],
+        "claimed_rank": "5"
+      },
+      "observation_before": {
+        "my_hand": [
+          "8\u2663",
+          "10\u2660",
+          "5\u2660",
+          "K\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663",
+          "8\u2660",
+          "5\u2665",
+          "7\u2660"
+        ],
+        "my_hand_size": 46,
+        "opponent_hand_size": 6,
+        "pile_size": 0,
+        "current_rank": "5",
+        "current_player": 1,
+        "turn": 74,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 74,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "8\u2663",
+            "10\u2660",
+            "K\u2660"
+          ],
+          "claimed_rank": "5"
+        },
+        "claimed_rank": "5",
+        "n_cards": 3,
+        "actual_cards": [
+          "8\u2663",
+          "10\u2660",
+          "K\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        6,
+        43
+      ]
+    },
+    {
+      "turn": 75,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "4\u2666"
+        ],
+        "claimed_rank": "6"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "10\u2666",
+          "7\u2665",
+          "4\u2666",
+          "K\u2663"
+        ],
+        "my_hand_size": 6,
+        "opponent_hand_size": 43,
+        "pile_size": 3,
+        "current_rank": "6",
+        "current_player": 0,
+        "turn": 75,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "5",
+          "n_cards": 3
+        }
+      },
+      "event": {
+        "turn": 75,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "4\u2666"
+          ],
+          "claimed_rank": "6"
+        },
+        "claimed_rank": "6",
+        "n_cards": 1,
+        "actual_cards": [
+          "4\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        5,
+        43
+      ]
+    },
+    {
+      "turn": 76,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "5\u2660",
+          "9\u2663"
+        ],
+        "claimed_rank": "7"
+      },
+      "observation_before": {
+        "my_hand": [
+          "5\u2660",
+          "9\u2663",
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663",
+          "8\u2660",
+          "5\u2665",
+          "7\u2660"
+        ],
+        "my_hand_size": 43,
+        "opponent_hand_size": 5,
+        "pile_size": 4,
+        "current_rank": "7",
+        "current_player": 1,
+        "turn": 76,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "6",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 76,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "5\u2660",
+            "9\u2663"
+          ],
+          "claimed_rank": "7"
+        },
+        "claimed_rank": "7",
+        "n_cards": 2,
+        "actual_cards": [
+          "5\u2660",
+          "9\u2663"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        5,
+        41
+      ]
+    },
+    {
+      "turn": 77,
+      "player": 0,
+      "action": {
+        "type": "challenge"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "10\u2666",
+          "7\u2665",
+          "K\u2663"
+        ],
+        "my_hand_size": 5,
+        "opponent_hand_size": 41,
+        "pile_size": 6,
+        "current_rank": "8",
+        "current_player": 0,
+        "turn": 77,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "7",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 77,
+        "player": 0,
+        "action": {
+          "type": "challenge"
+        },
+        "challenge_result": "caught_bluffing",
+        "actual_cards": [
+          "5\u2660",
+          "9\u2663"
+        ],
+        "pile_goes_to": 1
+      },
+      "hand_sizes_after": [
+        5,
+        47
+      ]
+    },
+    {
+      "turn": 78,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "3\u2660",
+          "A\u2666"
+        ],
+        "claimed_rank": "8"
+      },
+      "observation_before": {
+        "my_hand": [
+          "3\u2660",
+          "A\u2666",
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663",
+          "8\u2660",
+          "5\u2665",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "K\u2660",
+          "4\u2666",
+          "5\u2660",
+          "9\u2663"
+        ],
+        "my_hand_size": 47,
+        "opponent_hand_size": 5,
+        "pile_size": 0,
+        "current_rank": "8",
+        "current_player": 1,
+        "turn": 78,
+        "last_claim": null
+      },
+      "event": {
+        "turn": 78,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "3\u2660",
+            "A\u2666"
+          ],
+          "claimed_rank": "8"
+        },
+        "claimed_rank": "8",
+        "n_cards": 2,
+        "actual_cards": [
+          "3\u2660",
+          "A\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        5,
+        45
+      ]
+    },
+    {
+      "turn": 79,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "10\u2666"
+        ],
+        "claimed_rank": "9"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "10\u2666",
+          "7\u2665",
+          "K\u2663"
+        ],
+        "my_hand_size": 5,
+        "opponent_hand_size": 45,
+        "pile_size": 2,
+        "current_rank": "9",
+        "current_player": 0,
+        "turn": 79,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "8",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 79,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "10\u2666"
+          ],
+          "claimed_rank": "9"
+        },
+        "claimed_rank": "9",
+        "n_cards": 1,
+        "actual_cards": [
+          "10\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        4,
+        45
+      ]
+    },
+    {
+      "turn": 80,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "3\u2665",
+          "6\u2666"
+        ],
+        "claimed_rank": "10"
+      },
+      "observation_before": {
+        "my_hand": [
+          "3\u2665",
+          "6\u2666",
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663",
+          "8\u2660",
+          "5\u2665",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "K\u2660",
+          "4\u2666",
+          "5\u2660",
+          "9\u2663"
+        ],
+        "my_hand_size": 45,
+        "opponent_hand_size": 4,
+        "pile_size": 3,
+        "current_rank": "10",
+        "current_player": 1,
+        "turn": 80,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "9",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 80,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "3\u2665",
+            "6\u2666"
+          ],
+          "claimed_rank": "10"
+        },
+        "claimed_rank": "10",
+        "n_cards": 2,
+        "actual_cards": [
+          "3\u2665",
+          "6\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        4,
+        43
+      ]
+    },
+    {
+      "turn": 81,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "5\u2666"
+        ],
+        "claimed_rank": "J"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "5\u2666",
+          "7\u2665",
+          "K\u2663"
+        ],
+        "my_hand_size": 4,
+        "opponent_hand_size": 43,
+        "pile_size": 5,
+        "current_rank": "J",
+        "current_player": 0,
+        "turn": 81,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "10",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 81,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "5\u2666"
+          ],
+          "claimed_rank": "J"
+        },
+        "claimed_rank": "J",
+        "n_cards": 1,
+        "actual_cards": [
+          "5\u2666"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        3,
+        43
+      ]
+    },
+    {
+      "turn": 82,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "2\u2663",
+          "2\u2660"
+        ],
+        "claimed_rank": "Q"
+      },
+      "observation_before": {
+        "my_hand": [
+          "2\u2663",
+          "2\u2660",
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663",
+          "8\u2660",
+          "5\u2665",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "K\u2660",
+          "4\u2666",
+          "5\u2660",
+          "9\u2663"
+        ],
+        "my_hand_size": 43,
+        "opponent_hand_size": 3,
+        "pile_size": 6,
+        "current_rank": "Q",
+        "current_player": 1,
+        "turn": 82,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "J",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 82,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "2\u2663",
+            "2\u2660"
+          ],
+          "claimed_rank": "Q"
+        },
+        "claimed_rank": "Q",
+        "n_cards": 2,
+        "actual_cards": [
+          "2\u2663",
+          "2\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        3,
+        41
+      ]
+    },
+    {
+      "turn": 83,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "K\u2665",
+          "K\u2663"
+        ],
+        "claimed_rank": "K"
+      },
+      "observation_before": {
+        "my_hand": [
+          "K\u2665",
+          "7\u2665",
+          "K\u2663"
+        ],
+        "my_hand_size": 3,
+        "opponent_hand_size": 41,
+        "pile_size": 8,
+        "current_rank": "K",
+        "current_player": 0,
+        "turn": 83,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "Q",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 83,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "K\u2665",
+            "K\u2663"
+          ],
+          "claimed_rank": "K"
+        },
+        "claimed_rank": "K",
+        "n_cards": 2,
+        "actual_cards": [
+          "K\u2665",
+          "K\u2663"
+        ],
+        "honest": true
+      },
+      "hand_sizes_after": [
+        1,
+        41
+      ]
+    },
+    {
+      "turn": 84,
+      "player": 1,
+      "action": {
+        "type": "play",
+        "cards": [
+          "9\u2660"
+        ],
+        "claimed_rank": "A"
+      },
+      "observation_before": {
+        "my_hand": [
+          "9\u2660",
+          "9\u2666",
+          "4\u2665",
+          "3\u2663",
+          "J\u2666",
+          "J\u2665",
+          "6\u2663",
+          "4\u2663",
+          "Q\u2666",
+          "8\u2665",
+          "6\u2665",
+          "10\u2663",
+          "10\u2665",
+          "K\u2666",
+          "2\u2665",
+          "6\u2660",
+          "Q\u2663",
+          "4\u2660",
+          "Q\u2665",
+          "7\u2666",
+          "3\u2666",
+          "J\u2660",
+          "9\u2665",
+          "Q\u2660",
+          "7\u2663",
+          "J\u2663",
+          "A\u2665",
+          "5\u2663",
+          "2\u2666",
+          "8\u2666",
+          "A\u2660",
+          "A\u2663",
+          "8\u2660",
+          "5\u2665",
+          "7\u2660",
+          "8\u2663",
+          "10\u2660",
+          "K\u2660",
+          "4\u2666",
+          "5\u2660",
+          "9\u2663"
+        ],
+        "my_hand_size": 41,
+        "opponent_hand_size": 1,
+        "pile_size": 10,
+        "current_rank": "A",
+        "current_player": 1,
+        "turn": 84,
+        "last_claim": {
+          "player_id": 0,
+          "claimed_rank": "K",
+          "n_cards": 2
+        }
+      },
+      "event": {
+        "turn": 84,
+        "player": 1,
+        "action": {
+          "type": "play",
+          "cards": [
+            "9\u2660"
+          ],
+          "claimed_rank": "A"
+        },
+        "claimed_rank": "A",
+        "n_cards": 1,
+        "actual_cards": [
+          "9\u2660"
+        ],
+        "honest": false
+      },
+      "hand_sizes_after": [
+        1,
+        40
+      ]
+    },
+    {
+      "turn": 85,
+      "player": 0,
+      "action": {
+        "type": "play",
+        "cards": [
+          "7\u2665"
+        ],
+        "claimed_rank": "2"
+      },
+      "observation_before": {
+        "my_hand": [
+          "7\u2665"
+        ],
+        "my_hand_size": 1,
+        "opponent_hand_size": 40,
+        "pile_size": 11,
+        "current_rank": "2",
+        "current_player": 0,
+        "turn": 85,
+        "last_claim": {
+          "player_id": 1,
+          "claimed_rank": "A",
+          "n_cards": 1
+        }
+      },
+      "event": {
+        "turn": 85,
+        "player": 0,
+        "action": {
+          "type": "play",
+          "cards": [
+            "7\u2665"
+          ],
+          "claimed_rank": "2"
+        },
+        "claimed_rank": "2",
+        "n_cards": 1,
+        "actual_cards": [
+          "7\u2665"
+        ],
+        "honest": false,
+        "winner": 0
+      },
+      "hand_sizes_after": [
+        0,
+        40
+      ]
+    }
+  ],
+  "outcome": {
+    "winner": 0,
+    "total_turns": 86,
+    "reason": "empty_hand"
+  }
+}
